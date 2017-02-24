@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = project.properties['main.class']
+
+jar {
+    manifest {
+        attributes 'Main-Class': project.properties['main.class']
+    }
+}
