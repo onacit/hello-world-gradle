@@ -2,6 +2,10 @@ apply plugin: 'application'
 
 mainClassName = project.properties['main.class']
 
+task.withType(Compile) {
+    options.encoding = 'UTF-8'
+}
+
 jar {
     manifest {
         attributes 'Main-Class': project.properties['main.class']
