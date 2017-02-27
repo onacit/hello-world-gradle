@@ -2,7 +2,7 @@ apply plugin: 'application'
 
 mainClassName = project.properties['main.class']
 
-task.withType(JavaCompile) {
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
